@@ -6,7 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer's Profile</title>
     <link rel="stylesheet" href="index.css">
-    
+
+    <style>
+        .resume-btn {
+    display: inline-block;
+    background-color: rgb(71, 49, 102);
+    color: white;
+    text-decoration: none;
+    padding: 5px 12px; 
+    font-size: 0.9rem;  
+    border-radius: 10px; 
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: rgb(177, 40, 177);
+    transform: scale(1.08);
+}
+
+    </style>
 </head>
 
 <body>
@@ -23,6 +44,7 @@
             </div>
         </nav>
     </header>
+    
     <main>
         <section class="first">
             <div class="leftsec">
@@ -30,23 +52,30 @@
                 <div>and I am a passionate
                     <div><span id="element"></span></div>
                 </div>
+
+                
+                <a href="assets/Jagriti_SDE.pdf" download="Jagriti_Resume.pdf" class="resume-btn">
+                    Download Resume
+                </a>
             </div>
+
             <div class="rightsec">
                 <img src="bg.png" alt="">
             </div>
         </section>
+        
         <hr>
+
         <section class="second">
             <div class="journey-container">
                 <h2>My Coding Journey <span class="dot">.</span></h2>
                 <p>
-                    My journey into the world of coding started with curiosity and a desire to solve real-world
-                    problems.
+                    My journey into the world of coding started with curiosity and a desire to solve real-world problems.
                     I began by learning <i>C++</i>, mastering core concepts like <i>data structures and algorithms</i>.
                     As I progressed, I explored <i>Python</i> for <i>data analysis and automation</i>.
                 </p>
                 <p>
-                    My interest in web development led me to learn <i>HTML,CSS and JavaScript</i>, where I created
+                    My interest in web development led me to learn <i>HTML, CSS, and JavaScript</i>, where I created
                     interactive web projects.
                     Recently, I started learning <i>React</i> to build dynamic web applications, enhancing my skills
                     further.
@@ -81,7 +110,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer.'],
+            strings: ['Engineer','Coder and ','Web Developer.'],
             typeSpeed: 50,
         });
     </script>
