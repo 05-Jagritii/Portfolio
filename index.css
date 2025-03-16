@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(38, 27, 86);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(71, 49, 102);
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(170, 67, 163);
+}
+
+.left {
+    font-size: 2rem;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+.left .jagr{
+    color: rgb(177, 40, 177);
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first>div {
+    width: 40%;
+    margin: 50px 0px 0px 0px;
+}
+
+.leftsec {
+    font-size: 3rem;
+}
+
+img {
+    width: 90%;
+}
+
+.img{
+    width: 50%;
+    margin-left: 200px;
+}
+.jag {
+    color: rgb(177, 40, 177);
+}
+
+#element {
+    color: rgb(177, 40, 177);
+}
+
+.second {
+    padding: 50px;
+    color: #fff;
+}
+
+.journey-container h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.journey-container p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.journey-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dot {
+    color: rgb(177, 40, 177);
+}
+
+main hr {
+    margin: 77px 49px 0px;
+}
+
+footer {
+    background-color: rgb(71, 49, 102);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p{
+    color: grey;
+    padding: 0px 0px 15px 0px;
+}
+
+.footer-links a {
+    color: rgb(173, 166, 166);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    color: rgb(170, 67, 163);
+}

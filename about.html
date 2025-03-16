@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Developer's Profile</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: rgb(71, 49, 102);
+            color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .card-content {
+            font-size: 1.1rem;
+            color: rgb(200, 200, 200);
+        }
+
+        .about-container h2 {
+            color: white;
+            font-size: 2.5rem;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .about-container p {
+    margin: 10px 0px 10px 0px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jagriti's Portfolio <span class="jagr">.</span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftsec">
+                <div><span id="ele"></span></div>
+            </div>
+            <div class="rightsec">
+                <img src="about.png" alt="About Image" class="img">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="second">
+            <div class="about-container">
+                <h2>Who Am I?</h2>
+                <p>
+                    I'm <b>Jagriti Kanwar</b>, a passionate developer with a background in <i>Mechanical Engineering</i>
+                    at <b>IIT Patna</b>.
+                    My journey into coding began with curiosity and has evolved into a strong passion for solving
+                    problems
+                    using technology.
+                </p>
+                <p>
+                    I specialize in <b>Web Development</b>, <b>AI/ML</b>, and <b>Data Analysis</b>.
+                    I love turning ideas into impactful projects through coding.
+                </p>
+
+                <h2>Skills & Expertise</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-title">Web Development</div>
+                        <div class="card-content">Experienced in HTML, CSS, JavaScript, and React for creating
+                            responsive websites.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">AI/ML</div>
+                        <div class="card-content">Worked on predictive models, automation, and data analysis using
+                            Python.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Coding Projects</div>
+                        <div class="card-content">Developed projects like Drum Kit Game, Dicee Game, and Portfolio
+                            Website.</div>
+                    </div>
+                </div>
+
+                <h2>Why Coding?</h2>
+                <p>
+                    Coding empowers me to bring ideas to life. Whether it's building dynamic websites using
+                    <i>React</i>,
+                    solving data problems with <i>Python</i>, or automating tasks — coding has become my creative
+                    outlet.
+                </p>
+                <p>
+                    Let's connect and collaborate on amazing projects together!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Jagriti Kanwar. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/jagriti-kanwar" target="_blank">LinkedIn</a>
+                <a href="https://github.com/05-Jagritii" target="_blank">GitHub</a>
+                <a href="mailto:kanwarjagriti21@gmail.com" target="_blank">kanwarjagriti21@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#ele', {
+            strings: [
+                'Welcome to <span class="jag">My Story</span> <br> <div>Get to know the journey behind my coding passion.</div>'
+            ],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>

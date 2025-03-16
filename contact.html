@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Jagriti's Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(38, 27, 86);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(71, 49, 102);
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 67, 163);
+        }
+
+        .left {
+            font-size: 2rem;
+            font-family: 'Bubblegum Sans', cursive;
+        }
+
+        .left .jagr {
+            color: rgb(177, 40, 177);
+        }
+
+        .contact-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: rgb(71, 49, 102);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            color: rgb(177, 40, 177);
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid rgb(170, 67, 163);
+            border-radius: 5px;
+            background-color: rgb(50, 35, 85);
+            color: white;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            background-color: rgb(170, 67, 163);
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgb(177, 40, 177);
+        }
+
+        #response-message {
+            display: none;
+            color: rgb(170, 67, 163);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: rgb(71, 49, 102); 
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            
+        }
+
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-content p {
+            color: rgb(200, 200, 200);
+            padding-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px; 
+        }
+
+        .footer-links a {
+            color: rgb(173, 166, 166);
+            text-decoration: none;
+            
+        }
+
+        .footer-links a:hover {
+            color: rgb(177, 40, 177);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jagriti's Portfolio <span class="jagr">.</span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p id="response-message">
+                Message Sent Successfully!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Jagriti Kanwar. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/jagriti-kanwar" target="_blank">LinkedIn</a>
+                <a href="https://github.com/05-Jagritii" target="_blank">GitHub</a>
+                <a href="mailto:kanwarjagriti21@gmail.com" target="_blank">kanwarjagriti21@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        emailjs.init("kanwarjagriti21@gmail.com");
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            }).then(function(response) {
+                console.log("SUCCESS!", response.status, response.text);
+                document.getElementById("response-message").style.display = "block";
+            }, function(error) {
+                console.log("FAILED...", error);
+            });
+        });
+    </script>
+</body>
+</html>

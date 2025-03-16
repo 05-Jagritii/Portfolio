@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Developer's Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(38, 27, 86);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(71, 49, 102);
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 67, 163);
+        }
+
+        .left {
+            font-size: 2rem;
+            font-family: 'Bubblegum Sans', cursive;
+        }
+
+        .left .jagr {
+            color: rgb(177, 40, 177);
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: rgb(71, 49, 102);
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 20px rgba(170, 67, 163, 0.8);
+        }
+
+        .project-card h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .project-card h3:hover {
+            color: rgb(177, 40, 177);
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+            color: rgb(220, 220, 220);
+        }
+
+        .project-card a {
+            color: rgb(170, 67, 163);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgb(71, 49, 102);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 31px auto;
+            
+
+        }
+
+        .footer-content p {
+            color: grey;
+            padding: 0px 0px 15px 0px;
+        }
+
+        .footer-links a {
+            color: rgb(173, 166, 166);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            color: rgb(170, 67, 163);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jagriti's Portfolio <span class="jagr">.</span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-container">
+            <div class="project-card">
+                <h3>Drum Kit Game</h3>
+                <p>A fun project that enhances JavaScript skills using sound effects and event listeners.</p>
+                <a href="https://github.com/05-Jagritii/Drum-kit.git" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Dicee Game</h3>
+                <p>A simple yet engaging project that demonstrates DOM manipulation techniques.</p>
+                <a href="https://github.com/05-Jagritii/Dice-Game.git" target="_blank">View Project</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Data Analysis Dashboard</h3>
+                <p>Built a powerful dashboard for visualizing data trends using Python and libraries like Matplotlib.</p>
+                <a href="https://github.com/05-Jagritii/Movie.git" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A real-time weather application built using HTML, CSS, and JavaScript integrated with OpenWeather API.</p>
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Task Manager App</h3>
+                <p>Built with React.js, this app enables users to manage tasks, set reminders, and track progress.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Jagriti Kanwar. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/jagriti-kanwar" target="_blank">LinkedIn</a>
+                <a href="https://github.com/05-Jagritii" target="_blank">GitHub</a>
+                <a href="mailto:kanwarjagriti21@gmail.com" target="_blank">kanwarjagriti21@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
